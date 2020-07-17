@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BF3D2B324C16AB3008D915F /* IDCMSecurityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3D2B224C16AB3008D915F /* IDCMSecurityTool.m */; };
+		2BF3D2B524C16ADE008D915F /* h5_slider.html in Resources */ = {isa = PBXBuildFile; fileRef = 2BF3D2B424C16ADE008D915F /* h5_slider.html */; };
 		9AEDDC642394B046002ECEBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEDDC632394B046002ECEBF /* AppDelegate.m */; };
 		9AEDDC672394B046002ECEBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEDDC662394B046002ECEBF /* ViewController.m */; };
 		9AEDDC6A2394B046002ECEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEDDC682394B046002ECEBF /* Main.storyboard */; };
 		9AEDDC6C2394B048002ECEBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEDDC6B2394B048002ECEBF /* Assets.xcassets */; };
 		9AEDDC6F2394B048002ECEBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEDDC6D2394B048002ECEBF /* LaunchScreen.storyboard */; };
 		9AEDDC722394B048002ECEBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEDDC712394B048002ECEBF /* main.m */; };
-		9AEDDC7D2394BC61002ECEBF /* slide.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AEDDC7C2394BC61002ECEBF /* slide.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BF3D2B124C16AB3008D915F /* IDCMSecurityTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCMSecurityTool.h; sourceTree = "<group>"; };
+		2BF3D2B224C16AB3008D915F /* IDCMSecurityTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCMSecurityTool.m; sourceTree = "<group>"; };
+		2BF3D2B424C16ADE008D915F /* h5_slider.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = h5_slider.html; sourceTree = "<group>"; };
 		9AEDDC5F2394B046002ECEBF /* AliyunHtmlSlideValideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliyunHtmlSlideValideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEDDC622394B046002ECEBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AEDDC632394B046002ECEBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,7 +31,6 @@
 		9AEDDC6E2394B048002ECEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AEDDC702394B048002ECEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEDDC712394B048002ECEBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9AEDDC7C2394BC61002ECEBF /* slide.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = slide.html; path = AliyunHtmlSlideValideDemo/slide.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +47,7 @@
 		9AEDDC562394B046002ECEBF = {
 			isa = PBXGroup;
 			children = (
-				9AEDDC7C2394BC61002ECEBF /* slide.html */,
+				2BF3D2B424C16ADE008D915F /* h5_slider.html */,
 				9AEDDC612394B046002ECEBF /* AliyunHtmlSlideValideDemo */,
 				9AEDDC602394B046002ECEBF /* Products */,
 			);
@@ -64,6 +67,8 @@
 				9AEDDC622394B046002ECEBF /* AppDelegate.h */,
 				9AEDDC632394B046002ECEBF /* AppDelegate.m */,
 				9AEDDC652394B046002ECEBF /* ViewController.h */,
+				2BF3D2B124C16AB3008D915F /* IDCMSecurityTool.h */,
+				2BF3D2B224C16AB3008D915F /* IDCMSecurityTool.m */,
 				9AEDDC662394B046002ECEBF /* ViewController.m */,
 				9AEDDC682394B046002ECEBF /* Main.storyboard */,
 				9AEDDC6B2394B048002ECEBF /* Assets.xcassets */,
@@ -133,7 +138,7 @@
 			files = (
 				9AEDDC6F2394B048002ECEBF /* LaunchScreen.storyboard in Resources */,
 				9AEDDC6C2394B048002ECEBF /* Assets.xcassets in Resources */,
-				9AEDDC7D2394BC61002ECEBF /* slide.html in Resources */,
+				2BF3D2B524C16ADE008D915F /* h5_slider.html in Resources */,
 				9AEDDC6A2394B046002ECEBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF3D2B324C16AB3008D915F /* IDCMSecurityTool.m in Sources */,
 				9AEDDC672394B046002ECEBF /* ViewController.m in Sources */,
 				9AEDDC722394B048002ECEBF /* main.m in Sources */,
 				9AEDDC642394B046002ECEBF /* AppDelegate.m in Sources */,

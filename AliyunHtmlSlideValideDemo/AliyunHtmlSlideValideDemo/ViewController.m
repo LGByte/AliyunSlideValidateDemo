@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 
+#define SetAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define SetColor(r, g, b) SetAColor(r, g, b, 1)
 @protocol JSObjcDelegate;
 
 /**
@@ -27,6 +29,7 @@
 //    self.view.backgroundColor = [UIColor redColor];
     CGSize size = [UIScreen mainScreen].bounds.size;
     self.webView.scrollView.backgroundColor = [UIColor redColor];
+    self.webView.backgroundColor = SetColor(32, 40, 51) ;
     self.webView.frame = CGRectMake(0, 0, size.width, 100);
     self.webView.scrollView.bounces = NO;
     self.webView.center = self.view.center;
@@ -35,7 +38,7 @@
 }
 
 - (void)loadLocalHtmlForJs{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"slide" ofType:@"html"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"h5_slider" ofType:@"html"];
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
     [self.webView loadRequest:req];
 }
@@ -49,6 +52,9 @@
 - (void)getSlideData:(NSDictionary *)callData {
 //{"token":nc_token,"sid":data.csessionid,"sig":data.sig}
     NSLog(@"Get:%@", callData);
+    if(self.sBlock){
+        self.sBlock(callData);
+    }
 }
 
 

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^SliderBlock)(NSDictionary * dcit);
 @interface ViewController : UIViewController
-
+@property (nonatomic, copy)SliderBlock sBlock ;
 
 @end
 
